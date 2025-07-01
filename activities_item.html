@@ -37,7 +37,7 @@
 	<li><a href="destinations.html#link3">観光地メニュー3</a></li>
 	</ul>
 </li>
-<li><a href="activities.html">アクティビティ<span>Activities</span></a>
+<li class="current"><a href="activities.html">アクティビティ<span>Activities</span></a>
 	<ul>
 	<li><a href="activities_item.html">アクティビティ詳細</a></li>
 	<li><a href="activities_item.html">アクティビティ詳細</a></li>
@@ -58,42 +58,71 @@
 
 <div id="container">
 
-<div id="contents">
+<div id="contents" class="bg2">
 
 <main>
 
 <section>
 
-<form>
+<h2>アクティビティスポット詳細<span class="small">Popular Activity Spots Now</span></h2>
 
-<h2>お問い合わせ<span class="small">Contact</span></h2>
-<p>当ページと同じ３項目のお問い合わせフォーム（自動フォーム試用版）を簡単に使えるようにセットしています。<br>
-<span class="color-check">※当ページ（contact.html）はフォームの見本ページです。実際の自動フォームには使いませんのでご注意下さい。</span></p>
-<p><span class="color-check">自動フォームを使う場合（※編集に入る前にご確認下さい）</span><br>
-あなたのメールアドレス設定と、簡単な編集だけで使えます。<a href="https://template-party.com/file/formgen_manual_set2.html" target="_blank">こちらのマニュアルをご覧下さい。</a></p>
-<p><span class="color-check">自動フォームを使わない場合</span><br>
-テンプレートに梱包されている「form.html」「confirm.html」「finish.html」の3枚のファイルを削除して下さい。</p>
+<!--大きな画像を読み込む為のボックスなので削除しないで下さい-->
+<div class="thumbnail-view-parts"></div>
 
-<table class="ta1">
+<!--サムネイルブロック-->
+<div class="thumbnail-parts">
+<img src="images/1.jpg" alt="">
+<img src="images/2.jpg" alt="">
+<img src="images/3.jpg" alt="">
+</div>
+
+<h3>サムネイルチェンジの使い方</h3>
+<p>html側を参考に、表示させたい画像は全て「thumbnail-parts」内に入れて下さい。<br>
+大きな画像も兼用するので、ある程度大きめにしておきます。</p>
+<p>※必ずthumbnail-view-partsブロックの直後にthumbnail-partsブロックを配置して下さい。<br>
+間に他のタグがあると正常に動作しません。</p>
+
+</section>
+
+<section>
+
+<h2>予約状況</h2>
+
+<div class="ta-box">
+<table class="ta2">
+<caption>大見出しが必要ならcaptionを使う。不要ならcaptionの１行削除。</caption>
 <tr>
-<th>お名前※</th>
-<td><input type="text" name="お名前" size="30" class="ws"></td>
+<th>&nbsp;</th>
+<th>8/1</th>
+<th>8/2</th>
+<th>8/3</th>
+<th>8/4</th>
+<th>8/5</th>
+<th>8/6</th>
 </tr>
 <tr>
-<th>メールアドレス※</th>
-<td><input type="text" name="メールアドレス" size="30" class="ws"></td>
+<th>午前</th>
+<td>×</td>
+<td>△</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
+<td>○</td>
 </tr>
 <tr>
-<th>お問い合わせ詳細※</th>
-<td><textarea name="お問い合わせ詳細" cols="30" rows="10" class="wl"></textarea></td>
+<th>午後</th>
+<td>×</td>
+<td>△</td>
+<td>○</td>
+<td>○</td>
+<td>△</td>
+<td>×</td>
 </tr>
 </table>
+</div>
 
-<p class="c">
-<input type="submit" value="内容を確認する">
-</p>
-
-</form>
+<p>このテーブル（.ta2）は、画面幅が狭くなると自動で横スクロールが出ます。<br>
+横スクロールさせたい場合は、ta2の外側のta-boxと必ずセットで使って下さい。逆に横スクロールさせたくなければta-boxを外して下さい。</p>
 
 </section>
 

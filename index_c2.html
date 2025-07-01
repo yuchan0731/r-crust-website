@@ -91,7 +91,9 @@
 
 <div id="contents" class="bg1">
 
-<main>
+<main class="column">
+
+<div class="main-contents">
 
 <section>
 
@@ -132,93 +134,197 @@
 
 </section>
 
-<section>
+<section class="mb5vw">
 
-<h2 class="l">人気のアクティビティスポット<span class="small">Popular Activity Spots Now</span></h2>
-
-<div class="list-half">
-
-<h3>コメントを入れます<i class="fa-solid fa-person-walking"></i></h3>
-
-<div class="text">
-<h4>アクティビティスポット1<img src="images/kazari1.png" alt="" class="kazari"></h4>
-<p>サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
-<p class="btn"><a href="activities_item.html">詳しくみる</a></p>
-</div>
-
-<div class="image">
-<img src="images/1.jpg" alt="">
-</div>
-
-</div>
-<!--/.list-half-->
-
-<div class="list-half reverse">
-
-<h3>コメントを入れます<i class="fa-regular fa-face-smile-wink"></i></h3>
-
-<div class="text">
-<h4>アクティビティスポット2<img src="images/kazari2.png" alt="" class="kazari"></h4>
-<p>サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
-<p class="btn"><a href="activities_item.html">詳しくみる</a></p>
-</div>
-
-<div class="image">
-<img src="images/2.jpg" alt="">
-</div>
-
-</div>
-<!--/.list-half-->
+<h2 class="l">2カラムレイアウト</h2>
+<p>まず２カラムを囲むブロックとして、<br>
+<span class="look">&lt;main&gt;</span><br>
+を、<br>
+<span class="look">&lt;main <span class="color-check">class=&quot;column&quot;</span>&gt;</span><br>
+に変更し、その中にメインコンテンツの<br>
+<span class="look">&lt;div <span class="color-check">class=&quot;main-contents&quot;</span>&gt;</span><br>
+と、サブコンテンツ<br>
+<span class="look">&lt;div <span class="color-check">class=&quot;sub-contents&quot;</span>&gt;</span><br>
+を作って下さい。</p>
+<p>具体的には以下のような形になります。</p>
+<p><span class="look">&lt;main <span class="color-check">class=&quot;column&quot;</span>&gt;<br><br>
+&lt;div <span class="color-check">class=&quot;main-contents&quot;</span>&gt;<br>
+※ここにメインコンテンツの内容を入れます。<br>
+&lt;/div&gt;<br><br>
+&lt;div <span class="color-check">class=&quot;sub-contents&quot;</span>&gt;<br>
+※ここにサブコンテンツの内容を入れます。<br>
+&lt;/div&gt;<br><br>
+&lt;/div&gt;</span></p>
+<p>sub-contentsを右側にもってきたい場合は、cssフォルダのstyle.cssの、<br>
+<span class="look">/*2・3カラム（main-contents、sub-contents設定）</span><br>
+の中にある<span class="color-check">order</span>の数字を入れ替えて下さい。<br>
+orderは数字の小さな順に並びます。
+</p>
 
 </section>
 
-<section class="bg3 blur">
+</div>
+<!--/.main-contents-->
 
-<h2><span class="kazari3-wrap">お知らせ<span class="small">What's New</span></span></h2>
+<div class="sub-contents">
 
-<dl class="new">
-<dt>2024/07/16<span>アイコン</span></dt>
-<dd>観光案内サイト・旅行会社向け 無料ホームページテンプレート tp_travel1公開。</dd>
-<dt>20XX/00/00<span>アイコン</span></dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-<dt>20XX/00/00<span class="icon-bg2">アイコン</span></dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-<dt>20XX/00/00<span class="icon-bg1">アイコン</span></dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-<dt>20XX/00/00<span class="icon-bg1">アイコン</span></dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-</dl>
+<h3>Site Menu</h3>
 
-</section>
+<nav>
+<ul class="submenu">
+<li><a href="index.html">ホーム</a></li>
+<li><a href="destinations.html">観光地</a>
+	<ul>
+	<li><a href="destinations.html#link1">観光地メニュー1</a></li>
+	<li><a href="destinations.html#link2">観光地メニュー2</a></li>
+	<li><a href="destinations.html#link3">観光地メニュー3</a></li>
+	</ul>
+</li>
+<li><a href="activities.html">アクティビティ</a>
+	<ul>
+	<li><a href="activities_item.html">アクティビティ詳細</a></li>
+	<li><a href="activities_item.html">アクティビティ詳細</a></li>
+	<li><a href="activities_item.html">アクティビティ詳細</a></li>
+	</ul>
+</li>
+<li><a href="events.html">イベント</a></li>
+<li class="current"><a href="faq.html">よく頂く質問</a></li>
+</ul>
+</nav>
 
-<section class="blur">
-
-<h2 class="l">テンプレートのご利用前に必ずお読み下さい</h2>
-
-<h3>利用規約のご案内</h3>
-<p>このテンプレートは、<a href="https://template-party.com/">Template Party</a>にて無料配布している『観光案内サイト・旅行会社向け 無料ホームページテンプレート tp_travel1』です。必ずダウンロード先のサイトの<a href="https://template-party.com/read.html">利用規約</a>をご一読の上でご利用下さい。</p>
-<p><strong class="color-check">HP最下部の著作表示『Web Design:Template-Party』は無断で削除しないで下さい。</strong><br>
-わざと見えなく加工する事も禁止です。</p>
-<p><strong class="color-check">下部の著作を外したい場合は</strong><br>
-<a href="https://template-party.com/">Template-Party</a>の<a href="https://template-party.com/member.html">ライセンス契約</a>を行う事でHP下部の著作を外す事ができます。</p>
-
-<h3>当テンプレートの詳しい使い方は</h3>
-<p><a href="manual_template.html">こちらをご覧下さい。</a></p>
-
-</section>
-
-<section>
-
-<h3>無料CMSのご案内</h3>
-<p>お知らせ・一覧を出力できる無料CMSを公開中。</p>
-<p><a href="https://template-party.com/program/simple_cms.html" target="_blank"><img src="https://template-party.com/images/banner/program_simple_cms.png" alt="シンプルCMS"></a></p>
-
-</section>
+</div>
+<!--/.sub-contents-->
 
 <!--画面右半分で回転する大きな円形のテキストアニメーション-->
 <img src="images/bg_text1.svg" alt="" class="animation-text spin">
 
 </main>
+
+<main class="column">
+
+<div class="main-contents">
+
+<section>
+
+<h2 class="l">一応３カラムにもなります</h2>
+<p>sub-contentsを２つ入れることで、自動的に３カラムにもなります。<br>
+ただ、中央コンテンツが狭くなるので、中央ブロック用のパーツを調整する必要が出てきます。</p>
+
+<div class="list-grid1">
+
+<div class="list blur">
+<figure><img src="images/1.jpg" alt=""></figure>
+<div class="text">
+<h4>観光地タイトル1</h4>
+<p>観光地の簡単な説明を入れます。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
+</div>
+<p class="btn"><a href="destinations.html#link1">詳しくみる</a></p>
+</div>
+
+<div class="list blur">
+<figure><img src="images/2.jpg" alt=""></figure>
+<div class="text">
+<h4>観光地タイトル2</h4>
+<p>観光地の簡単な説明を入れます。サンプルテキスト。サンプルテキスト。サンプルテキスト。</p>
+</div>
+<p class="btn"><a href="destinations.html#link2">詳しくみる</a></p>
+</div>
+
+<div class="list blur">
+<figure><img src="images/3.jpg" alt=""></figure>
+<div class="text">
+<h4>観光地タイトル3</h4>
+<p>観光地の簡単な説明を入れます。サンプルテキスト。サンプルテキスト。サンプルテキスト。<br>
+観光地の簡単な説明を入れます。</p>
+</div>
+<p class="btn"><a href="destinations.html#link3">詳しくみる</a></p>
+</div>
+
+</div>
+<!--/.list-grid1-->
+
+</section>
+
+</div>
+<!--/.main-contents-->
+
+<div class="sub-contents">
+
+<h3>１つ目のsub-contents</h3>
+
+<nav>
+<ul class="submenu">
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+</ul>
+</nav>
+
+</div>
+<!--/.sub-contents-->
+
+<div class="sub-contents">
+
+<h3>２つ目のsub-contents</h3>
+
+<nav>
+<ul class="submenu">
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+</ul>
+</nav>
+
+</div>
+<!--/.sub-contents-->
+
+</main>
+
+<div class="bg3">
+
+<main class="column">
+
+<div class="main-contents">
+
+<h2 class="l">bg3背景を使いたい場合は</h2>
+
+<p>１カラムの時のように単純にsectionにclassを指定してまうと、左のメニューに背景画像がおよばないので、main-contentsの外側に１つdivタグを追加し、そこにbg3を追加して下さい。</p>
+
+<p><span class="look">
+<span class="color-check">&lt;div class=&quot;bg3&quot;&gt;</span><br>
+&lt;main class=&quot;column&quot;&gt;<br>
+〜〜<br>
+&lt;/div&gt;<br>
+<span class="color-check">&lt;/div&gt;</span></span></p>
+
+</div>
+<!--/.main-contents-->
+
+<div class="sub-contents">
+
+<h3>Site Menu</h3>
+
+<nav>
+<ul class="submenu">
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+<li><a href="#">メニュー</a></li>
+</ul>
+</nav>
+
+</div>
+<!--/.sub-contents-->
+
+</main>
+
+</div>
+<!--/.bg3-->
 
 </div>
 <!--/#contents-->
